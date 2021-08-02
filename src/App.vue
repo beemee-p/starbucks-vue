@@ -1,32 +1,69 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div>
+    <router-link to="/">HOME</router-link>
+    <router-link to="/menu">Menu</router-link>
+    <router-link to="/login">Log in</router-link>
+    <router-link to="/signup">Sign up</router-link>
+    <router-link to="/mypage">Mypage</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
+<script>
+export default {};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.menu_area {
+  width: 350px;
+  padding: 40px;
+  background: #000000;
+  height: 100vh;
+}
+.menu_area .logo_area {
+  margin: 30px 150px 30px 0;
   text-align: center;
-  color: #2c3e50;
+  font-size: 40px;
+  font-weight: 1000;
+  border-bottom: 5px solid #d9d9dc;
+  text-align: left;
 }
-
-#nav {
-  padding: 30px;
+.menu_area .logo_area .logo_title {
+  margin: 15px 0;
 }
-
-#nav a {
+.title_area {
+  margin: 60px 0;
+}
+.title_area .menu_title_area {
+  font-size: 18px;
   font-weight: bold;
-  color: #2c3e50;
+  width: 100%;
+  border-bottom: 1px solid #d9d9dc;
+  color: #434343;
+  text-align: left;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.title_area .menu_title_area .menu_title {
+  margin: 15px 0 20px 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #eb8888;
+}
+.content_area {
+  padding: 50px;
 }
 </style>
