@@ -1,5 +1,5 @@
 # starbucks
-This is starbucks replica website using Vue.js & Styled component
+This is Starbucks replica website using Vue.js with vuex, styled component.
 
 ## Project setup
 ```
